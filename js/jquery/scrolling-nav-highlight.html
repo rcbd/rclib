@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+    <style>
+        .wrapper {
+            display: flex;
+            width: 100%;
+        }
+        #sidebar {
+            width: 200px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            z-index: 999;
+            color: #fff;
+            transition: all 0.3s;
+            background-color: #d47b00;
+        }
+
+        #content { 
+            margin-left: 200px;
+        }
+
+        .components a {
+            display: block;
+            padding: 0.5rem 0;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.4rem;
+            border-left: 8px solid transparent;
+        }
+        .components a:hover {
+            background-color: #d49f00;
+            text-decoration: none;
+            border-left: 8px solid #fff;
+        }
+
+        .components a.active {
+            border-left: 8px solid #fff;
+        }
+
+        .h {
+            font-size: 4rem;
+            margin-top: 2rem;
+        }
+
+        footer {
+            background-color: #5a5a5a;
+            color: #fff;
+            min-height: 400px;
+            margin-top: 150px;
+        }
+    </style>
+
+
+    <title>Scrolling Nav Highlight</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav id="sidebar">
+            <ul class="list-unstyled components">
+                <li><a href="#section-1">Section 1</a></li>
+                <li><a href="#section-2">Section 2</a></li>
+                <li><a href="#section-3" class="active">Section 3</a></li>
+                <li><a href="#section-4">Section 4</a></li>
+                <li><a href="#section-5">Section 5</a></li>
+                <li><a href="#section-6">Section 6</a></li>
+                <li><a href="#section-7">Section 7</a></li>
+            </ul>
+        </nav>
+        <div id="content">
+            <div class="row">
+                <div class="col pl-4">
+                    <div class="h" id="section-1">Section 1</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium, risus id fringilla vulputate, diam purus tempor
+                    orci, quis faucibus erat magna in lectus. Quisque bibendum nibh ligula. Curabitur id libero metus. Phasellus cursus
+                    venenatis libero sit amet luctus. Curabitur ultricies lacus a pulvinar commodo. Vestibulum ante ipsum primis in faucibus
+                    orci luctus et ultrices posuere cubilia Curae; Ut neque sem, varius vitae elit vel, porttitor luctus sapien.</p>
+                    
+                    <p>Sed eget justo sodales, tempus orci eu, aliquam nisl. Aenean eu risus sodales, rhoncus turpis eu, ullamcorper lorem. Ut
+                    at nisl nisi. Curabitur risus nisl, imperdiet nec auctor vitae, pharetra eu enim. Pellentesque habitant morbi tristique
+                    senectus et netus et malesuada fames ac turpis egestas. Curabitur sollicitudin sollicitudin magna vitae blandit. Nulla
+                    sed viverra ex, sit amet blandit ex.</p>
+                    
+                    <p>Nulla facilisis rhoncus aliquam. Nullam in ipsum at orci vulputate mattis. Vivamus eget porta lacus. Cras gravida
+                    molestie dignissim. Aliquam facilisis ornare nibh, nec dapibus erat aliquet dignissim. Duis ac ex turpis. Vestibulum
+                    tincidunt eu tortor dapibus tempor. Nulla semper sodales purus id efficitur. Morbi non cursus diam.</p>
+                    
+                    <div class="h" id="section-2">Section 2</div>
+                    <p>Maecenas id viverra metus, sed maximus velit. Suspendisse potenti. Ut eu orci ut sapien faucibus sagittis in at ex. Nunc
+                    pellentesque et lacus non pharetra. Suspendisse iaculis tempor ligula. Sed eu eros hendrerit, pellentesque sem id,
+                    tincidunt tellus. Nam mollis rutrum est ac fringilla. Suspendisse vel nisl non eros vestibulum dapibus sit amet ut
+                    ligula. Vestibulum id leo quam. Proin nisl eros, hendrerit eget pulvinar rhoncus, porttitor ut urna.</p>
+                    
+                    <p>Donec lobortis quam eu bibendum faucibus. Pellentesque convallis, velit vel auctor mollis, eros justo laoreet odio, sed
+                    cursus purus nunc et nulla. Fusce pretium urna eu mauris vehicula auctor. Aliquam luctus lorem a diam sagittis, id
+                    maximus mi pharetra. Integer ut dolor quis lacus lobortis accumsan eget quis turpis. Curabitur rhoncus tincidunt nulla
+                    ac tristique. Pellentesque condimentum tempus sem at elementum. Suspendisse egestas augue vel nulla consectetur, eget
+                    congue odio vehicula. Pellentesque tempor lectus quis leo malesuada, in luctus tortor tempus. Quisque vehicula fringilla
+                    rutrum. Ut at suscipit leo.</p>
+                    
+                    <div class="h" id="section-3">Section 3</div>
+                    <p>Donec ex eros, lobortis a lacinia quis, ultrices in quam. Quisque ac erat tempus, efficitur risus id, accumsan risus.
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Interdum et malesuada fames ac
+                    ante ipsum primis in faucibus. Nunc id imperdiet metus. Vivamus convallis lacinia porttitor. Donec sed felis ut tellus
+                    condimentum efficitur. Nullam rutrum, libero id ornare ultricies, purus est pulvinar nulla, vel pretium velit erat a
+                    dolor. Etiam convallis sed tellus eu venenatis. Mauris nisl mi, viverra at tellus sed, scelerisque vestibulum nisi.
+                    Aliquam erat volutpat. Aenean fermentum non lacus et egestas. Fusce euismod tellus ac velit sodales, pulvinar hendrerit
+                    erat tincidunt. Pellentesque feugiat eget urna eu pharetra.</p>
+                    
+                    <p>Nulla fringilla tempus lorem, sed convallis felis ornare ut. Nullam lacinia diam eget diam sodales, eget tristique
+                    tortor volutpat. Praesent blandit, neque non consectetur tempus, urna justo auctor neque, id lacinia eros diam nec
+                    neque. Integer faucibus porta nisi eu finibus. Ut et libero libero. Interdum et malesuada fames ac ante ipsum primis in
+                    faucibus. Etiam mollis sed justo ut maximus. Donec sed nisi faucibus, convallis nibh a, lacinia orci. Donec vitae
+                    vehicula ipsum. In lobortis ipsum ullamcorper ligula pulvinar, sed egestas enim tristique. Duis ullamcorper erat ac
+                    tellus pretium, vitae blandit lacus consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    
+                    <p>Mauris in felis sollicitudin, consectetur odio id, elementum massa. Mauris non vehicula nisi, sed tincidunt sem.
+                    Suspendisse rhoncus vitae dolor ac consectetur. Donec turpis eros, porttitor in blandit in, luctus vel augue. Integer
+                    pulvinar rutrum metus a efficitur. Integer eget pretium lacus. Nam varius urna et tortor tincidunt, sed pharetra ex
+                    auctor. Fusce eu purus eget urna gravida tincidunt quis id turpis.</p>
+                    
+                    <div class="h" id="section-4">Section 4</div>
+                    <p>Fusce sollicitudin massa nulla, quis rutrum nisi facilisis a. Donec non nisl id purus varius accumsan quis eget ligula.
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque at turpis
+                    enim. Nunc a lorem dui. Maecenas tempus, nisl eget auctor maximus, tellus ligula tincidunt sapien, at vestibulum est
+                    nulla ac nisi. Morbi efficitur elementum est, a convallis eros bibendum eget. Nunc pulvinar scelerisque ipsum.</p>
+                    
+                    <p>Nunc id elit ultricies, molestie nulla ac, aliquam justo. Nam faucibus eu lacus efficitur maximus. Nullam rutrum
+                    consequat est, quis luctus arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    Sed pretium sem lectus, ac tincidunt tellus blandit nec. Suspendisse auctor magna nec nisi eleifend, scelerisque
+                    suscipit ligula ultricies. Proin feugiat sollicitudin ultrices. Maecenas vel nunc vel eros bibendum volutpat sed non
+                    nulla. Maecenas fermentum fermentum sapien ac lobortis.</p>
+                    
+                    <p>Quisque pharetra cursus neque, a placerat mi vehicula ac. Pellentesque rhoncus tellus eleifend ipsum elementum, ut
+                    euismod ipsum tempor. Quisque nec augue vel tortor varius pretium. Sed eget ligula in dui porttitor aliquet lacinia a
+                    lacus. Donec eu pharetra nisl, id tincidunt risus. Donec suscipit odio vitae nibh ultrices mattis. Morbi maximus gravida
+                    ligula, vel porttitor ex imperdiet id. Nam convallis orci elit, sed ullamcorper metus sodales ut. Donec pharetra
+                    ultricies libero, sagittis placerat mauris mollis ac.</p>
+                    
+                    <p>Morbi dictum, libero vitae maximus gravida, purus nisl tincidunt purus, porta maximus nisl massa non libero. Nulla sit
+                    amet tortor vehicula, placerat felis a, auctor odio. Nam gravida tortor sit amet turpis sollicitudin, eget tempor diam
+                    luctus. Aliquam commodo malesuada tellus, ac tempus tellus venenatis vitae. Pellentesque vitae mi eget eros feugiat
+                    tempor sed nec orci. Donec malesuada ex sit amet faucibus condimentum. Proin consequat viverra libero, id consequat mi
+                    auctor sed. Vestibulum vitae magna eget dolor dignissim porta ut laoreet arcu. Aenean non lacus eget sapien lobortis
+                    scelerisque. Nunc in justo vitae turpis iaculis fermentum vitae non nibh.</p>
+                    
+                    <div class="h" id="section-5">Section 5</div>
+                    <p>Nulla imperdiet orci quis nisi auctor tempus. Aenean fermentum eget ipsum ac laoreet. Praesent at ex ultricies, vehicula
+                    velit eget, finibus urna. In ullamcorper libero mollis, luctus ante et, blandit risus. Mauris lacus diam, aliquam et
+                    condimentum volutpat, consectetur vel nibh. Sed blandit metus arcu, sit amet pulvinar nibh rutrum ac. Vivamus vitae
+                    sapien in purus aliquam auctor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                    egestas. Aliquam placerat ipsum sed semper aliquet. Suspendisse euismod, massa eget sodales sollicitudin, risus nulla
+                    semper nulla, ut luctus urna leo vitae sem. Aenean dictum mi felis, non molestie tortor rutrum sit amet.</p>
+                    
+                    <div class="h" id="section-6">Section 6</div>
+                    <p>Nulla luctus elit lectus, ullamcorper tempor nisl elementum at. Aenean sollicitudin mi vitae felis accumsan ornare. Nunc
+                    in arcu cursus, vulputate arcu non, pharetra risus. Suspendisse consectetur auctor lacus sit amet pharetra. Proin
+                    tempor, magna vel venenatis dignissim, nisl tortor pulvinar lacus, et suscipit nunc justo id quam. Phasellus gravida
+                    risus non nulla pulvinar, nec porttitor augue efficitur. Quisque purus elit, imperdiet id sapien sagittis, ultrices
+                    bibendum augue. Suspendisse accumsan risus nisi, ut tempus arcu venenatis non. Cras ultricies blandit tellus quis
+                    feugiat. Phasellus sed ante eu justo tincidunt dapibus.
+                    
+                    <p>Praesent consequat at dui a facilisis. In hac habitasse platea dictumst. Aliquam erat volutpat. Quisque at finibus elit.
+                    Quisque cursus lectus eleifend feugiat maximus. Donec auctor leo mauris, a egestas felis molestie ut. Phasellus non est
+                    fringilla, sodales odio a, maximus arcu. Vestibulum molestie diam quis mauris aliquam commodo. Mauris molestie justo
+                    turpis, nec consectetur arcu pellentesque sed.</p>
+                    
+                    <p>Donec euismod arcu vitae sem ultricies, sit amet suscipit sapien feugiat. Fusce nec semper neque, et ultrices lectus.
+                    Morbi rutrum pellentesque ligula, at commodo massa venenatis id. Vivamus eleifend ligula lorem, molestie varius nunc
+                    mollis sit amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut dictum
+                    eleifend nisi, vitae varius enim bibendum vitae. Donec scelerisque libero nec magna malesuada imperdiet. Aliquam
+                    faucibus, odio nec ultricies euismod, metus erat pellentesque lacus, sed feugiat lectus lectus quis libero. Proin
+                    euismod quam sit amet convallis rhoncus. Duis ac mauris ac dolor varius tempor. Nulla porta molestie velit vel egestas.
+                    Donec malesuada lacus sagittis placerat accumsan. Morbi tristique mollis sapien.</p>
+                    
+                    <p>Cras aliquam tempus dignissim. Suspendisse potenti. Suspendisse quis urna lacinia, laoreet mi sit amet, accumsan massa.
+                    Sed erat lectus, interdum et scelerisque vel, finibus non arcu. Sed nec tempus sem, quis cursus nisi. Nulla volutpat
+                    augue eu tellus facilisis efficitur. Aliquam erat volutpat. Phasellus vel dolor non leo venenatis sollicitudin. Nam
+                    pulvinar accumsan facilisis. Quisque vehicula, orci quis varius consequat, lectus mi semper erat, a dapibus velit felis
+                    eu nisi. Vivamus posuere tortor quis nisl placerat imperdiet. Maecenas ultrices elementum ante. Quisque accumsan nec
+                    risus a imperdiet.</p>
+                    
+                    <div class="h" id="section-7">Section 7</div>
+                    <p>Ut ullamcorper pulvinar pharetra. Nunc elementum feugiat enim a tincidunt. Aenean elit elit, consequat ac orci eu,
+                    elementum sagittis odio. Duis eget purus augue. Aliquam a cursus leo. Aliquam ornare sem lacus, vitae tincidunt tortor
+                    fermentum ut. Ut tempor massa ante, commodo semper mauris suscipit at. Quisque ante tortor, dignissim ac ligula at,
+                    rutrum lacinia lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam accumsan enim ut magna
+                    egestas, quis pellentesque dui suscipit. Aliquam sem purus, lacinia et nibh in, scelerisque euismod risus. Vestibulum
+                    feugiat, est sit amet cursus feugiat, tellus augue pellentesque turpis, non bibendum turpis neque eu orci. Etiam
+                    molestie quam vitae est congue egestas. Donec risus sem, maximus nec rhoncus in, lobortis a nibh.</p>
+                    
+                    <p>Ut finibus vestibulum lectus, sed aliquam arcu laoreet vel. Maecenas a egestas erat. Maecenas varius, ligula dapibus
+                    iaculis sollicitudin, lectus sem laoreet velit, ut blandit lectus justo eu risus. Duis non augue in sapien scelerisque
+                    sodales ut sit amet metus. Vivamus luctus, libero sed ultrices ultricies, orci elit venenatis odio, sit amet finibus
+                    lectus tortor et justo. Fusce tincidunt sapien imperdiet enim scelerisque, vel dignissim magna egestas. Aliquam
+                    hendrerit, purus et aliquet facilisis, dui tellus placerat arcu, eget lacinia ipsum erat sed neque. Vestibulum
+                    scelerisque, urna nec rhoncus iaculis, ipsum urna porttitor ex, id tristique justo augue in est. Quisque tempus
+                    malesuada velit, a cursus enim vestibulum nec. Curabitur sit amet tincidunt dolor, eget lobortis nisl. Vivamus volutpat
+                    ullamcorper enim ac lacinia. Maecenas non posuere enim. Quisque iaculis suscipit lorem eu luctus.</p>
+                    
+                    <p>Duis sed eros pulvinar, porta lectus non, fermentum ante. Pellentesque ullamcorper leo sed sapien porttitor, vel commodo
+                    arcu pretium. Curabitur a magna leo. Aenean in sagittis ex. Vestibulum pharetra id tellus sed imperdiet. Aenean egestas
+                    venenatis arcu at vestibulum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eu lorem felis. Sed
+                    pellentesque cursus rhoncus.</p>              
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &#978;
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script  src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script>        
+        const sections = $('.h');
+        const topOffset = 100;
+        $(document).ready(function() {
+
+            $(window).on('scroll', function() {
+                let pos = $(this).scrollTop();               
+
+                sections.each(function() {
+                    let top = $(this).offset().top - topOffset,
+                        bottom = top + topOffset + $(this).outerHeight(),
+                        sid = $(this).attr('id');
+                    console.log(`${sid} is (${top},${bottom}) and I am ${pos}`);
+                    if (pos >= top && pos <= bottom) {
+                        console.log(`I am in section ${sid}`);
+                        $('.components').find('a').removeClass('active');
+                        $('.components').find('a[href="#' + sid + '"]').addClass('active');
+                    }
+                })
+            });
+            $('nav a').click(function(e) {
+                const sectionTarget = $(this).attr('href');
+                const x = $(sectionTarget).offset().top;
+                console.log("Target is: " + sectionTarget + " at " + x);
+                $('html, body').animate({ scrollTop: x, easing: 'linear' }, 'slow');
+                e.preventDefault();
+            });
+        });
+    </script>
+</body>
+
+</html>
